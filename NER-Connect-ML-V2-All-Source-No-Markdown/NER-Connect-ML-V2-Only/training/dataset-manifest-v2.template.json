@@ -1,0 +1,36 @@
+{
+  "dataset_name": "REPLACE",
+  "schema_version": "2",
+  "created_at": "REPLACE_WITH_TIMEZONE_AWARE_ISO8601",
+  "kind": "REPLACE_WITH_real_ner_labels_OR_research_external",
+  "geographic_coverage": {
+    "states": [],
+    "districts": [],
+    "bounds_wgs84": []
+  },
+  "temporal_coverage": {
+    "start": "REPLACE",
+    "end": "REPLACE"
+  },
+  "sources": [],
+  "licenses": [],
+  "feature_definitions": {},
+  "positive_target_definition": "Documented logistics-relevant disruption in (T, T+6h].",
+  "negative_control_sampling_method": "REPLACE with documented controls; missing reports are not negatives",
+  "disruption_definition": "REPLACE with closure/obstruction/inundation/damage/access criteria",
+  "label_source": "REPLACE with verified incident source and audit fields",
+  "deduplication_rules": "REPLACE",
+  "spatial_resolution": "road segment",
+  "road_segment_generation_method": "REPLACE with source, CRS, segment length and stable ID algorithm",
+  "weather_alignment_method": "As-of join; observations and forecast issue times must be <= observation_time",
+  "missing_data_policy": "Nulls preserved; required ML inputs reject live ML; no zero filling",
+  "dataset_fingerprint_sha256": "REPLACE_WITH_64_HEX_CHARACTERS",
+  "split_membership": {
+    "train": [],
+    "calibration": [],
+    "selection": [],
+    "test": []
+  },
+  "known_limitations": [],
+  "storm_group_validation": "unavailable"
+}

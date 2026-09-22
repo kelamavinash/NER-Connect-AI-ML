@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "task": "road_segment_disruption",
+  "target_horizon_hours": 6,
+  "feature_version": "2",
+  "model_candidates": [
+    "logistic_regression",
+    "random_forest",
+    "extra_trees",
+    "xgboost",
+    "lightgbm",
+    "catboost"
+  ],
+  "device": "cpu",
+  "allow_device_fallback": true,
+  "spatial_block_degrees": 0.25,
+  "unseen_district_holdout": false,
+  "spatial_buffer_km": null,
+  "temporal_cutoffs": {},
+  "calibration_method": "sigmoid",
+  "threshold_policy": "selection_f1",
+  "storm_group_validation": "optional"
+}
